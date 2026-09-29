@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="off">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Édit — o caderno editorial da Nogueira Woman sobre moda, matéria, desfiles e cultura.">
+  <title>Édit — Nogueira Woman</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <a class="wordmark" href="/" aria-label="Nogueira Woman — início"><span>NOGUEIRA</span><span>WOMAN</span></a>
+    <button class="nav-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-principal">Menu</button>
+    <nav class="site-nav" id="menu-principal" data-site-nav aria-label="Navegação principal">
+      <a href="/">Le Manifeste</a><a href="/edit/" aria-current="page">Édit</a><a href="/shop/">Shop</a>
+    </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle>NOIR</button>
+  </header>
+
+  <main class="page" id="conteudo">
+    <header class="editorial-head">
+      <div><p class="eyebrow">Journal Nogueira · Édition 001</p><h1 class="page-title">ÉDIT</h1></div>
+      <p class="editorial-deck">Moda para além da peça: movimentos, processos e ideias para entender o que vestimos — e por quê.</p>
+    </header>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>Défilés</span><span>Marché</span><span>Matière</span><span>Culture</span><span>Silhouette</span><span>Défilés</span><span>Marché</span><span>Matière</span><span>Culture</span><span>Silhouette</span></div></div>
+
+    <article class="lead-story" data-category="culture" data-reveal>
+      <div class="lead-visual" role="img" aria-label="Campanha urbana Nogueira Woman em preto e branco"></div>
+      <div class="lead-copy">
+        <div class="article-meta"><span>Le regard</span><span>Caderno de estreia</span></div>
+        <div>
+          <h2>Estilo é uma forma de autoria.</h2>
+          <p>Antes de uma tendência ganhar nome, existe um gesto: a decisão de escolher, combinar, recusar e reinterpretar. É nesse intervalo entre referência e identidade que o estilo acontece.</p>
+          <button class="article-toggle" type="button" data-article-toggle aria-expanded="false" aria-controls="lead-note">Lire la note</button>
+          <p class="article-body" id="lead-note" hidden>Para a Nogueira, informação não serve para ditar regras, mas para ampliar repertórios. ÉDIT nasce como um caderno aberto sobre o sistema da moda, seus criadores e as transformações que atravessam o modo de vestir.</p>
+        </div>
+      </div>
+    </article>
+
+    <section aria-labelledby="carnet-title">
+      <div class="edit-bar">
+        <h2 id="carnet-title">Le carnet</h2>
+        <div class="filters" aria-label="Filtrar artigos">
+          <button type="button" data-filter="tous" aria-pressed="true">Tous</button>
+          <button type="button" data-filter="marche" aria-pressed="false">Marché</button>
+          <button type="button" data-filter="matiere" aria-pressed="false">Matière</button>
+          <button type="button" data-filter="culture" aria-pressed="false">Culture</button>
+        </div>
+      </div>
+      <div class="article-grid">
+        <article class="article-card" data-category="marche" data-reveal>
+          <div class="article-meta"><span>Marché</span><span>01</span></div>
+          <h3>O luxo depois do excesso.</h3>
+          <p>Uma leitura sobre valor, permanência e o retorno da escolha consciente no vestir.</p>
+          <button class="article-toggle" type="button" data-article-toggle aria-expanded="false" aria-controls="note-1">Lire la note</button>
+          <p class="article-body" id="note-1" hidden>O novo luxo não precisa anunciar seu preço. Ele aparece na precisão do corte, no tempo dedicado ao acabamento e na relação duradoura entre a peça e quem a escolhe.</p>
+        </article>
+        <article class="article-card" data-category="matiere" data-reveal>
+          <div class="article-meta"><span>Matière</span><span>02</span></div>
+          <h3>Quando o tecido decide a forma.</h3>
+          <p>Caimento, textura e movimento como ponto de partida para uma silhueta.</p>
+          <button class="article-toggle" type="button" data-article-toggle aria-expanded="false" aria-controls="note-2">Lire la note</button>
+          <p class="article-body" id="note-2" hidden>Uma peça começa muito antes do desenho final. Peso, transparência, memória e toque orientam a construção e determinam como a roupa encontra o corpo.</p>
+        </article>
+        <article class="article-card" data-category="culture" data-reveal>
+          <div class="article-meta"><span>Culture</span><span>03</span></div>
+          <h3>O arquivo como futuro.</h3>
+          <p>Por que revisitar imagens e códigos do passado pode abrir novas possibilidades de criação.</p>
+          <button class="article-toggle" type="button" data-article-toggle aria-expanded="false" aria-controls="note-3">Lire la note</button>
+          <p class="article-body" id="note-3" hidden>Referência não é repetição. Um arquivo vivo permite observar proporções, técnicas e atitudes para então deslocá-las, questioná-las e transformá-las em algo do presente.</p>
+        </article>
+        <article class="article-card" data-category="marche" data-reveal>
+          <div class="article-meta"><span>Marché</span><span>04</span></div>
+          <h3>Tendência sem uniformidade.</h3>
+          <p>Como ler os movimentos do mercado sem abandonar uma assinatura pessoal.</p>
+          <button class="article-toggle" type="button" data-article-toggle aria-expanded="false" aria-controls="note-4">Lire la note</button>
+          <p class="article-body" id="note-4" hidden>Tendências são sinais coletivos, não ordens. Entender de onde vêm e por que surgem ajuda a escolher o que faz sentido — e a deixar passar o que não conversa com sua identidade.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="next-chapter" data-reveal><a href="/shop/"><small>Próximo capítulo</small><strong>SHOP</strong></a><span class="chapter-mark" aria-hidden="true">03</span></div>
+  </main>
+
+  <footer class="site-footer"><a class="wordmark" href="/"><span>NOGUEIRA</span><span>WOMAN</span></a><div class="footer-future">À venir · Communication · Atelier</div></footer>
+</body>
+</html>
