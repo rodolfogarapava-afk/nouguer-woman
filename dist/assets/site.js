@@ -66,3 +66,14 @@ document.querySelectorAll('[data-article-toggle]').forEach((button) => {
     target.hidden = expanded;
   });
 });
+
+const socialStatus = document.querySelector('[data-social-status]');
+
+document.querySelectorAll('[data-social-placeholder]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const network = button.dataset.socialPlaceholder;
+    if (!socialStatus) return;
+    socialStatus.textContent = `${network} da Nouguer — perfil oficial em breve.`;
+    socialStatus.classList.add('is-active');
+  });
+});
