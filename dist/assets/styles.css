@@ -99,13 +99,6 @@ body.menu-open { overflow: hidden; }
   mix-blend-mode: lighten;
 }
 
-.brand-logo--footer { width: clamp(12rem, 20vw, 17rem); }
-
-.brand-logo--footer img {
-  filter: invert(1);
-  mix-blend-mode: screen;
-}
-
 .nav-toggle {
   display: none;
   border: 0;
@@ -302,7 +295,7 @@ body.menu-open { overflow: hidden; }
 
 .footer-statement {
   max-width: 34rem;
-  margin: 2rem 0 0;
+  margin: 0;
   color: #aaa59b;
   font-family: var(--display);
   font-size: clamp(1.35rem, 2.2vw, 2.3rem);
