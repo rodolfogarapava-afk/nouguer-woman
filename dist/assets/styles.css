@@ -518,12 +518,18 @@ button { font: inherit; }
 
 @media (min-width: 821px) {
   .hero {
+    grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
     height: calc(100svh - 5.2rem);
     min-height: 42rem;
     max-height: 62rem;
   }
 
-  .hero-media { min-height: 0; }
+  .hero-media {
+    width: min(calc(100% - 2.5rem), 31rem);
+    min-height: 0;
+    justify-self: center;
+    margin: clamp(1.5rem, 3vw, 3rem) 0;
+  }
 }
 
 @media (max-width: 820px) {
