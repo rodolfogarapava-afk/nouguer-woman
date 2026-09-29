@@ -67,19 +67,27 @@ button { font: inherit; }
   backdrop-filter: blur(15px);
 }
 
-.wordmark {
+.brand-logo {
   display: inline-flex;
-  flex-direction: column;
   justify-self: start;
+  width: clamp(9.8rem, 15vw, 13.5rem);
   color: inherit;
   text-decoration: none;
-  line-height: 1;
-  letter-spacing: 0.28em;
-  font-weight: 500;
 }
 
-.wordmark span:first-child { font-size: 1rem; }
-.wordmark span:last-child { margin-top: 0.38rem; font-size: 0.56rem; letter-spacing: 0.36em; }
+.brand-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  mix-blend-mode: darken;
+}
+
+:root[data-theme='noir'] .brand-logo img {
+  filter: invert(1);
+  mix-blend-mode: lighten;
+}
+
+.brand-logo--footer { width: clamp(12rem, 20vw, 17rem); }
 
 .nav-toggle {
   display: none;
@@ -427,7 +435,7 @@ button { font: inherit; }
 
 @media (max-width: 540px) {
   .site-header { padding-inline: 1rem; }
-  .wordmark span:first-child { font-size: 0.88rem; }
+  .brand-logo { width: 9rem; }
   .hero-copy { min-height: 33rem; padding-inline: 1.2rem; }
   .hero-intro { font-size: 1.25rem; }
   .hero-media { min-height: 62svh; }
