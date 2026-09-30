@@ -304,8 +304,9 @@ body.menu-open { overflow: hidden; }
   max-width: 34rem;
   margin: 0;
   color: #aaa59b;
-  font-family: var(--display);
+  font-family: var(--sans);
   font-size: clamp(1.35rem, 2.2vw, 2.3rem);
+  font-weight: 300;
   line-height: 1.25;
 }
 
@@ -570,7 +571,12 @@ body.menu-open { overflow: hidden; }
     background: var(--paper);
   }
   .site-nav.is-open { display: flex; }
-  .site-nav a { font-family: var(--display); font-size: 2rem; letter-spacing: 0; }
+  .site-nav a {
+    font-family: var(--title);
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.045em;
+  }
   .hero {
     grid-template-columns: minmax(0, 1fr);
     height: auto;
