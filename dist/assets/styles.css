@@ -180,8 +180,9 @@ body.menu-open { overflow: hidden; }
 .hero-intro {
   width: min(34rem, 100%);
   margin: 0 0 0 auto;
-  font-family: var(--display);
+  font-family: var(--sans);
   font-size: clamp(1.35rem, 2.1vw, 2.2rem);
+  font-weight: 300;
   line-height: 1.25;
 }
 
